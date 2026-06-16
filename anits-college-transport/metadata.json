@@ -1,0 +1,6 @@
+{
+  "name": "ANITS College Transport",
+  "description": "Comprehensive transport management system for Anil Neerukonda Institute of Technology & Sciences (ANITS), Visakhapatnam, featuring bus routes, pass registration, live simulation tracking, and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
