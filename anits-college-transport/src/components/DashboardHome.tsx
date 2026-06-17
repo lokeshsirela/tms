@@ -52,13 +52,13 @@ export default function DashboardHome({ announcements, routes, setCurrentTab }: 
   ];  return (
     <div className="space-y-10 pb-16 font-sans">
       {/* Hero Banner Section */}
-      <div className="relative bg-white border-4 border-slate-900 p-8 md:p-12 shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] rounded-none overflow-hidden min-h-[300px] flex flex-col justify-center">
+      <div className="relative bg-white border-4 border-slate-900 p-6 md:p-12 shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] rounded-none overflow-hidden min-h-[300px] flex flex-col justify-center">
         {/* Background massive letters */}
         <h1 className="text-[140px] font-black leading-[0.8] tracking-tighter uppercase select-none pointer-events-none opacity-[0.03] absolute -top-4 left-10 font-display">
           MANAGEMENT
         </h1>
         <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-          <div className="max-w-2xl space-y-4">
+          <div className="max-w-2xl space-y-4 w-full">
             <div className="inline-flex items-center space-x-2 bg-blue-50 border-2 border-blue-700 text-blue-700 px-3 py-1 text-xs font-black uppercase tracking-widest font-mono">
               🛡️ Safe, Timely & Campus-Managed Bus Fleet
             </div>
@@ -70,11 +70,11 @@ export default function DashboardHome({ announcements, routes, setCurrentTab }: 
               Real-time fleet optimization for Anil Neerukonda Institute of Technology & Sciences.
               Managing active deluxe routes covering Gajuwaka, Madhurawada, Pendurthi, and Vizianagaram.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4 w-full md:w-auto">
               <button
                 id="hero-apply-btn"
                 onClick={() => setCurrentTab('pass')}
-                className="bg-blue-700 hover:bg-slate-900 text-white font-black uppercase tracking-wider px-6 py-3.5 border-2 border-slate-900 transition-all rounded-none text-xs flex items-center justify-center space-x-2 cursor-pointer shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 duration-150"
+                className="w-full sm:w-auto bg-blue-700 hover:bg-slate-900 text-white font-black uppercase tracking-wider px-6 py-3.5 border-2 border-slate-900 transition-all rounded-none text-xs flex items-center justify-center space-x-2 cursor-pointer shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 duration-150"
               >
                 <FileCheck className="w-4 h-4" />
                 <span>Apply for Bus Pass</span>
@@ -82,14 +82,14 @@ export default function DashboardHome({ announcements, routes, setCurrentTab }: 
               <button
                 id="hero-routes-btn"
                 onClick={() => setCurrentTab('routes')}
-                className="bg-white hover:bg-slate-50 text-slate-900 font-black uppercase tracking-wider px-6 py-3.5 border-2 border-slate-900 transition-all rounded-none text-xs flex items-center justify-center space-x-2 cursor-pointer shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 duration-150"
+                className="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-900 font-black uppercase tracking-wider px-6 py-3.5 border-2 border-slate-900 transition-all rounded-none text-xs flex items-center justify-center space-x-2 cursor-pointer shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 duration-150"
               >
                 <MapPin className="w-4 h-4 text-blue-700 stroke-[2.5]" />
                 <span>Explore Bus Routes</span>
               </button>
             </div>
           </div>
-          <div className="flex flex-col items-end shrink-0 select-none">
+          <div className="flex flex-col items-start md:items-end shrink-0 select-none">
             <span className="text-8xl font-black text-slate-200 tabular-nums leading-none font-display">48</span>
             <span className="text-xs font-black tracking-widest text-slate-400 uppercase font-mono">Active Buses</span>
           </div>

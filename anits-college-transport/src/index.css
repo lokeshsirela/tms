@@ -5,3 +5,23 @@
   --font-sans: "Inter", system-ui, sans-serif;
   --font-display: "Syne", system-ui, sans-serif;
 }
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-bus-pass-card,
+  #printable-bus-pass-card * {
+    visibility: visible;
+  }
+  #printable-bus-pass-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    border: 4px solid #0f172a !important;
+    box-shadow: none !important;
+  }
+}
+
